@@ -1,5 +1,7 @@
 # starter-typescript-library
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/osdevisnot/starter-typescript-library.svg)](https://greenkeeper.io/)
+
 This project is a starter for typescript libraries. To use this starter, ensure you have `degit` installed.
 
 ```
