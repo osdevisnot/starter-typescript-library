@@ -12,4 +12,4 @@ To create a new project based on this template:
 degit osdevisnot/starter-typescript-library my-app && $_ && node setup.js
 ```
 
-> This project is currently designed to be monorepo created using https://github.com/osdevisnot/starter-monorepo
+> for optimal setup, use this starter as a module in monorepo setup based on https://github.com/osdevisnot/starter-monorepo

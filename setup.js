@@ -22,20 +22,26 @@ fs.writeFileSync(fromRoot('README.md'), `#${name}\n\n`, 'utf-8')
 /**
  * Rewrite files replacing starter name
  */
-const rewriteFiles = ['package.json']
+const rewriteFiles = ['package.json', 'rollup.config.js']
 rewriteFiles.forEach(file => {
   const content = fs.readFileSync(fromRoot(file), 'utf-8')
   fs.writeFileSync(fromRoot(file), content.replace(/starter-typescript-library/g, name), 'utf-8')
 })
 
+const renameFiles = ['src/starter-typescript-library.ts', 'test/starter-typescript-library.test.js']
+renameFiles.forEach(file => {
+  const newName = file.replace(/starter-typescript-library/g, name)
+  fs.renameSync(fromRoot(file), fromRoot(newName))
+})
+
 /**
  * Remove Files and Self destruct...
  */
-const files = ['yarn.lock', '.travis.yml', '.gitignore', '.prettierrc', 'setup.js']
+const files = ['.travis.yml', 'setup.js']
 files.forEach(file => fs.unlinkSync(fromRoot(file)))
 
 /**
- * Add latest devDependencies and initialize git repo
+ * install dependencies and initialize git repo
  */
 const commands = ['yarn', 'git add .', 'git commit -am "first commit from starter-typescript-library"']
 commands.forEach(command => {
