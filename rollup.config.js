@@ -12,7 +12,7 @@ const libName = pkg.name
   .replace(/-([a-z])/g, match => match[1].toUpperCase())
 
 const config = {
-  input: 'src/starter-tsypescript-library.ts',
+  input: 'src/starter-typescript-library.ts',
   external: Object.keys(pkg.dependencies),
   watch: { include: 'src/**' },
   plugins: [json(), typescript({ useTsconfigDeclarationDir: true }), commonjs(), sourcemap()]

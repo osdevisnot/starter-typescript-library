@@ -1,4 +1,4 @@
-import DummyClass from '../src/starter-tsypescript-library'
+import DummyClass from '../src/starter-typescript-library'
 
 describe('starter-typescript-library tests', () => {
   it('works if try is trythy', () => {

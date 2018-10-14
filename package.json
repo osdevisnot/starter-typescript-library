@@ -1,20 +1,20 @@
 {
-  "name": "starter-tsypescript-library",
+  "name": "starter-typescript-library",
   "version": "0.1.0",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "main": "dist/starter-tsypescript-library.cjs.js",
-  "module": "dist/starter-tsypescript-library.esm.js",
-  "typings": "dist/types/starter-tsypescript-library.d.ts",
+  "main": "dist/starter-typescript-library.cjs.js",
+  "module": "dist/starter-typescript-library.esm.js",
+  "typings": "dist/types/starter-typescript-library.d.ts",
   "scripts": {
     "prebuild": "del-cli dist",
     "build": "rollup -c rollup.config.js",
     "start": "rollup -c rollup.config.js -w",
     "test": "jest"
   },
-  "browser": "dist/starter-tsypescript-library.js",
+  "browser": "dist/starter-typescript-library.js",
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
