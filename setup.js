@@ -22,7 +22,7 @@ fs.writeFileSync(fromRoot('README.md'), `#${name}\n\n`, 'utf-8')
 /**
  * Rewrite files replacing starter name
  */
-const rewriteFiles = ['package.json', 'rollup.config.js']
+const rewriteFiles = ['package.json', 'rollup.config.js', 'test/starter-typescript-library.test.ts']
 rewriteFiles.forEach(file => {
   const content = fs.readFileSync(fromRoot(file), 'utf-8')
   fs.writeFileSync(fromRoot(file), content.replace(/starter-typescript-library/g, name), 'utf-8')
