@@ -41,9 +41,12 @@ const files = ['.travis.yml', 'setup.js']
 files.forEach(file => fs.unlinkSync(fromRoot(file)))
 
 /**
- * install dependencies and initialize git repo
+ * Add latest devDependencies and initialize git repo
  */
-const commands = ['yarn', 'git add .', 'git commit -am "first commit from starter-typescript-library"']
+const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"', 'npm install']
+if (!fs.existsSync('.git')) {
+  commands.unshift('git init')
+}
 commands.forEach(command => {
   console.log(`----- Executing Command -----> ${command}`)
   sync(command, { stdio: [0, 1, 2] })
