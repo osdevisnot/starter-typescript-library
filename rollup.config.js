@@ -4,6 +4,7 @@ const commonjs = require('rollup-plugin-commonjs')
 const sourcemap = require('rollup-plugin-sourcemaps')
 const serve = require('rollup-plugin-serve')
 const livereload = require('rollup-plugin-livereload')
+const resolve = require('rollup-plugin-node-resolve')
 
 const terser = require('rollup-plugin-terser').terser
 
@@ -18,12 +19,13 @@ const libName = pkg.name
 
 const config = {
   input: 'src/starter-typescript-library.ts',
-  external: Object.keys(pkg.dependencies),
+  external: isDev ? [] : Object.keys(pkg.dependencies),
   watch: { include: 'src/**' },
   plugins: [
     json(),
     typescript({ useTsconfigDeclarationDir: true }),
     commonjs(),
+    isDev && resolve(),
     sourcemap(),
     isDev && serve({ contentBase: ['public', 'dist'], historyApiFallback: true, port: 4444 }),
     isDev && livereload('dist')
