@@ -49,7 +49,7 @@ files.forEach(file => fs.unlinkSync(fromRoot(file)))
  * Add latest devDependencies and initialize git repo
  */
 const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"', 'npm install']
-if (!fs.existsSync('.git')) {
+if (!fs.existsSync(path.join('..', '..', '.git'))) {
   commands.unshift('git init')
 }
 commands.forEach(command => {
