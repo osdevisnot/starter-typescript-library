@@ -21,6 +21,6 @@
   "browser": "dist/starter-typescript-library.js",
   "dependencies": {},
   "devDependencies": {
-    "tslib-cli": "0.0.3"
+    "tslib-cli": "0.0.4"
   }
 }
