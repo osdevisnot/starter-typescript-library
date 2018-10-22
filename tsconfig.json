@@ -1,18 +1,26 @@
 {
   "include": ["src"],
   "compilerOptions": {
-    "moduleResolution": "node",
-    "target": "es5",
-    "module": "es2015",
-    "lib": ["es2015", "es2016", "es2017", "dom"],
-    "strict": true,
-    "sourceMap": true,
-    "declaration": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declarationDir": "dist/types",
-    "outDir": "dist/lib",
-    "typeRoots": ["node_modules/@types"]
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
+    "alwaysStrict": true, // Parse in strict mode and emit "use strict" for each source file.
+    "declaration": true, // Generates corresponding '.d.ts' file.
+    "declarationDir": "dist", // write declartion files to this directory
+    "emitDecoratorMetadata": true, // Enables experimental support for emitting type metadata for decorators.
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'.
+    "experimentalDecorators": true, // Enables experimental support for ES7 decorators.
+    "lib": ["es2015", "es2016", "es2017", "dom"], // Specify library files to be included in the compilation.
+    "module": "es2015", // Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'.
+    "moduleResolution": "node", // Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6).
+    "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type.
+    "noImplicitThis": true, // Raise error on 'this' expressions with an implied 'any' type.
+    "outDir": "dist", // Redirect output structure to the directory.
+    "resolveJsonModule": true, // allow importing json as modules
+    "sourceMap": true, // Generates corresponding '.map' file.
+    "strict": true, // Enable all strict type-checking options.
+    "strictFunctionTypes": true, // Enable strict checking of function types.
+    "strictNullChecks": true, // Enable strict null checks.
+    "strictPropertyInitialization": true, // Enable strict checking of property initialization in classes.
+    "target": "es5", // Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'.
+    "typeRoots": ["node_modules/@types"] // List of folders to include type definitions from.
   }
 }
