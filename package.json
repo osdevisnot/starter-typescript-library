@@ -9,18 +9,20 @@
   "module": "dist/starter-typescript-library.esm.js",
   "typings": "dist/starter-typescript-library.d.ts",
   "scripts": {
-    "start": "tslib start",
     "build": "tslib build",
-    "test": "tslib test",
     "coverage": "tslib coverage",
-    "lint": "tslib lint",
-    "docs": "tslib docs",
     "deploy": "tslib deploy",
-    "publish": "tslib publish"
+    "docs": "tslib docs",
+    "lint": "tslib lint",
+    "publish": "tslib publish",
+    "start": "tslib start",
+    "test": "tslib test"
   },
   "browser": "dist/starter-typescript-library.js",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "23.3.8",
+    "@types/node": "10.12.0",
     "tslib-cli": "0.0.4"
   }
 }

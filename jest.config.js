@@ -8,5 +8,6 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'], // An array of file extensions your modules use
   testEnvironment: 'node', // The test environment that will be used for testing
   testMatch: ['**/__tests__/**/*.(js|ts)?(x)', '**/?(*.)+(spec|test).(js|ts)?(x)'], // The glob patterns Jest uses to detect test files
-  transform: { '.(ts|tsx)': 'ts-jest' } // A map from regular expressions to paths to transformers
+  transform: { '.(ts|tsx)': 'ts-jest' }, // A map from regular expressions to paths to transformers
+  coverageThreshold: { global: { branches: 65, functions: 80, lines: 85, statements: 80 } }
 }
