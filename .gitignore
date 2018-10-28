@@ -21,6 +21,7 @@ bower_components
 build
 coverage
 dist
+docs
 node_modules
 npm-debug.log*
 yarn-debug.log*
