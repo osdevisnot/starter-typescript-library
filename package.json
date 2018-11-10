@@ -5,8 +5,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/starter-typescript-library.cjs.js",
-  "module": "dist/starter-typescript-library.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "typings": "dist/starter-typescript-library.d.ts",
   "scripts": {
     "build": "tslib build",
