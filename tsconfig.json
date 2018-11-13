@@ -1,6 +1,7 @@
 {
   "include": ["src"],
   "compilerOptions": {
+    "allowJs": true, // Allow JavaScript files to be compiled.
     "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
     "alwaysStrict": true, // Parse in strict mode and emit "use strict" for each source file.
     "declaration": true, // Generates corresponding '.d.ts' file.
