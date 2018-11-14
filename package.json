@@ -16,7 +16,8 @@
     "lint": "tslib lint",
     "publish": "tslib publish",
     "start": "tslib start",
-    "test": "tslib test"
+    "test": "tslib test",
+    "watch": "tslib watch"
   },
   "browser": "dist/starter-typescript-library.js",
   "dependencies": {},
