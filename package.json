@@ -23,6 +23,6 @@
   "devDependencies": {
     "@types/jest": "23.3.9",
     "@types/node": "10.12.5",
-    "tslib-cli": "0.0.11"
+    "tslib-cli": "0.0.13"
   }
 }
