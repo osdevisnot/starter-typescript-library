@@ -22,7 +22,7 @@
   "browser": "dist/starter-typescript-library.js",
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "23.3.9",
+    "@types/jest": "23.3.10",
     "@types/node": "10.12.5",
     "tslib-cli": "0.0.14"
   }
