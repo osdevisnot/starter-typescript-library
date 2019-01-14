@@ -22,7 +22,12 @@ fs.writeFileSync(fromRoot('README.md'), `#${name}\n\n`, 'utf-8')
 /**
  * Rewrite files replacing starter name
  */
-const rewriteFiles = ['package.json', 'test/starter-typescript-library.test.ts', 'public/index.html']
+const rewriteFiles = [
+  'package.json',
+  'test/starter-typescript-library.test.ts',
+  'public/index.html',
+  'rollup.config.js'
+]
 rewriteFiles.forEach(file => {
   const content = fs.readFileSync(fromRoot(file), 'utf-8')
   fs.writeFileSync(fromRoot(file), content.replace(/starter-typescript-library/g, name), 'utf-8')
@@ -43,7 +48,7 @@ files.forEach(file => fs.unlinkSync(fromRoot(file)))
 /**
  * Add latest devDependencies and initialize git repo
  */
-const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"', 'npm install']
+const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"', 'yarn']
 if (!fs.existsSync(path.join('..', '..', '.git'))) {
   commands.unshift('git init')
 }

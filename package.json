@@ -5,25 +5,19 @@
   "files": [
     "dist"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/starter-typescript-library.js",
+  "module": "dist/starter-typescript-library.mjs",
   "typings": "dist/starter-typescript-library.d.ts",
   "scripts": {
-    "build": "tslib build",
-    "coverage": "tslib coverage",
-    "deploy": "tslib deploy",
-    "docs": "tslib docs",
-    "lint": "tslib lint",
-    "publish": "tslib publish",
-    "start": "tslib start",
-    "test": "tslib test",
-    "watch": "tslib watch"
+    "build": "rollup -c",
+    "coverage": "jest --coverage",
+    "start": "rollup -wc",
+    "test": "jest --watch"
   },
-  "browser": "dist/starter-typescript-library.js",
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "23.3.9",
-    "@types/node": "10.12.5",
-    "tslib-cli": "0.0.14"
+    "@types/jest": "23.3.12",
+    "@types/node": "10.12.18",
+    "tslib-cli": "0.0.28"
   }
 }
