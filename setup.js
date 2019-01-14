@@ -24,7 +24,7 @@ fs.writeFileSync(fromRoot('README.md'), `#${name}\n\n`, 'utf-8')
  */
 const rewriteFiles = [
   'package.json',
-  'test/starter-typescript-library.test.ts',
+  'test/starter-typescript-library.test.tsx',
   'public/index.html',
   'rollup.config.js'
 ]
@@ -33,7 +33,7 @@ rewriteFiles.forEach(file => {
   fs.writeFileSync(fromRoot(file), content.replace(/starter-typescript-library/g, name), 'utf-8')
 })
 
-const renameFiles = ['src/starter-typescript-library.ts', 'test/starter-typescript-library.test.ts']
+const renameFiles = ['src/starter-typescript-library.tsx', 'test/starter-typescript-library.test.tsx']
 renameFiles.forEach(file => {
   const newName = file.replace(/starter-typescript-library/g, name)
   fs.renameSync(fromRoot(file), fromRoot(newName))
