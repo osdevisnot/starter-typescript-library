@@ -11,13 +11,15 @@
   "scripts": {
     "build": "rollup -c",
     "coverage": "jest --coverage",
+    "presetup": "git clean -fdX",
+    "setup": "yarn",
     "start": "rollup -wc",
     "test": "jest --watch"
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "24.0.6",
-    "@types/node": "11.9.4",
-    "tslib-cli": "1.0.1"
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.10.4",
+    "tslib-cli": "^1.0.0"
   }
 }
