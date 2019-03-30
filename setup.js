@@ -17,7 +17,7 @@ const fromRoot = file => path.join(cwd, file)
 /**
  * Write a README.md file
  */
-fs.writeFileSync(fromRoot('README.md'), `#${name}\n\n`, 'utf-8')
+fs.writeFileSync(fromRoot('README.md'), `# ${name}\n\n`, 'utf-8')
 
 /**
  * Rewrite files replacing starter name

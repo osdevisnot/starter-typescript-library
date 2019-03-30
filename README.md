@@ -11,5 +11,5 @@ npm install -g degit
 To create a new project based on this template:
 
 ```
-degit osdevisnot/starter-typescript-library my-app && $_ && node setup.js
+degit osdevisnot/starter-typescript-library my-app && cd $_ && node setup.js
 ```
