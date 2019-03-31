@@ -5,7 +5,6 @@ module.exports = {
   coverageDirectory: 'docs', // The directory where Jest should output its coverage files
   coveragePathIgnorePatterns: ['/node_modules/', '/test/'], // An array of regexp pattern strings used to skip coverage collection
   coverageReporters: ['text', 'lcov'], // A list of reporter names that Jest uses when writing coverage reports
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'], // An array of file extensions your modules use
   testEnvironment: 'node', // The test environment that will be used for testing
   testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'], // The glob patterns Jest uses to detect test files
   transform: { '.(ts|tsx|js|jsx)': 'ts-jest' }, // A map from regular expressions to paths to transformers

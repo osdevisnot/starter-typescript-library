@@ -3,5 +3,5 @@ cache:
   directories:
     - node_modules
 node_js:
-  - 10
+  - 11
 script: npm run coverage && npm run build

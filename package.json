@@ -9,17 +9,17 @@
   "module": "dist/starter-typescript-library.mjs",
   "typings": "dist/starter-typescript-library.d.ts",
   "scripts": {
-    "build": "rollup -c",
-    "coverage": "jest --coverage",
-    "presetup": "git clean -fdX",
-    "setup": "yarn",
-    "start": "rollup -wc",
-    "test": "jest --watch"
+    "build": "tslib build",
+    "coverage": "tslib coverage",
+    "docs": "tslib docs",
+    "setup": "tslib setup",
+    "start": "tslib start",
+    "test": "tslib test"
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "@types/node": "^11.10.4",
-    "tslib-cli": "^2.0.1"
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.12.2",
+    "tslib-cli": "^2.0.2"
   }
 }

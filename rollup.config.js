@@ -5,12 +5,12 @@ let config = [
   {
     input: 'src/starter-typescript-library.tsx',
     output: { file: 'dist/starter-typescript-library.mjs', format: 'es' },
-    tsconfigOverride: { exclude: ['node_modules', 'dist', 'public'] }
+    tsconfigOverride: { exclude: ['node_modules', 'dist', 'public', 'test'] }
   },
   {
     input: 'src/starter-typescript-library.tsx',
     output: { file: 'dist/starter-typescript-library.js', format: 'umd', name: 'starter-typescript-library' },
-    tsconfigOverride: { exclude: ['node_modules', 'dist', 'public'] },
+    tsconfigOverride: { exclude: ['node_modules', 'dist', 'public', 'test'] },
     minify: true
   }
 ]
