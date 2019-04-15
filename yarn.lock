@@ -3874,14 +3874,6 @@ read-pkg@^3.0.0:
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
 
-read-pkg@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/read-pkg/-/read-pkg-5.0.0.tgz#75449907ece8dfb89cbc76adcba2665316e32b94"
-  integrity sha512-OWufaRc67oJjcgrxckW/qO9q22iYzyiONh8h+GMcnOvSHAmhV1Dr3x+gyRjP+Qxc5jKupkSfoCQLS/98rDPh9A==
-  dependencies:
-    normalize-package-data "^2.3.2"
-    parse-json "^4.0.0"
-
 readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.3.0, readable-stream@^2.3.5:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
@@ -4176,15 +4168,6 @@ rollup-plugin-typescript2@0.20.1:
     resolve "1.10.0"
     rollup-pluginutils "2.4.1"
     tslib "1.9.3"
-
-rollup-plugin-unpkg@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/rollup-plugin-unpkg/-/rollup-plugin-unpkg-0.0.3.tgz#d71937aef260de78fa29570268be8303b04398fc"
-  integrity sha512-iZk0rGnuilLVSrQQnet4BFHLa9NKWSmVFiiPFYpS2xLzL6l30VYmrZ0vLpH0U9dF+ZjXBta39uqT+6Mzujr3Bg==
-  dependencies:
-    estree-walker "^0.6.0"
-    magic-string "^0.25.2"
-    read-pkg "^5.0.0"
 
 rollup-pluginutils@2.4.1, rollup-pluginutils@^2.3.0:
   version "2.4.1"
@@ -4750,10 +4733,10 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib-cli@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/tslib-cli/-/tslib-cli-2.0.8.tgz#460c1f661f2c8eafe6fa06b29e3e3700a8b11305"
-  integrity sha512-1cpYjx+m4VHRNnE0IT8YawRdxXz7Jb8bml/cYhbThR5pKN0QmShU9HnZmzQEpEcs4qt04mli4GKB1HsjE/s9rw==
+tslib-cli@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.npmjs.org/tslib-cli/-/tslib-cli-2.0.9.tgz#b565397d7e9dd7d0259955070f0eb44e4a657c03"
+  integrity sha512-i56loDB6NbciDMhKsOcKNXgOMzmy8aU4nn+vfeL6wZDGg0iNzbO48h6PhVzhZxSoTJOCPiQpLwUgou0sNGbcEQ==
   dependencies:
     "@types/jest" "24.0.11"
     "@types/node" "11.13.4"
@@ -4775,7 +4758,6 @@ tslib-cli@^2.0.8:
     rollup-plugin-serve "1.0.1"
     rollup-plugin-terser "4.0.4"
     rollup-plugin-typescript2 "0.20.1"
-    rollup-plugin-unpkg "0.0.3"
     ts-jest "24.0.2"
     tslint "5.15.0"
     tslint-config-airbnb "5.11.1"
