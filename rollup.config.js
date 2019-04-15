@@ -17,9 +17,7 @@ let config = [
 
 // demo code on `npm start`
 if (!!process.env.ROLLUP_WATCH) {
-  config = [
-    { input: 'public/index.tsx', output: { file: 'dist/index.js', format: 'umd', name: 'example' }, devServer: true }
-  ]
+  config = [{ input: 'public/index.tsx', output: { file: 'dist/index.js', format: 'es' }, devServer: true }]
 }
 
 export default bundles(config)
