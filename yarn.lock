@@ -4733,10 +4733,10 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib-cli@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.npmjs.org/tslib-cli/-/tslib-cli-2.0.9.tgz#b565397d7e9dd7d0259955070f0eb44e4a657c03"
-  integrity sha512-i56loDB6NbciDMhKsOcKNXgOMzmy8aU4nn+vfeL6wZDGg0iNzbO48h6PhVzhZxSoTJOCPiQpLwUgou0sNGbcEQ==
+tslib-cli@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.npmjs.org/tslib-cli/-/tslib-cli-2.0.10.tgz#48ce2e6c0219424f3638b9ce8db006ce1201167a"
+  integrity sha512-LNcvmnJLOgT7XAykBwO1j1c6X87QhTNfsji4MHgWgwvt6RKNB5PB6tCPL9T4zWIRPKIwZPObr4PLbc3NUEqjBg==
   dependencies:
     "@types/jest" "24.0.11"
     "@types/node" "11.13.4"
