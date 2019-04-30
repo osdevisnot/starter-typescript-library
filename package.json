@@ -20,7 +20,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.12",
     "@types/node": "^11.13.8",
-    "tslib-cli": "^2.0.11"
+    "tslib-cli": "^2.0.12"
   },
   "publishConfig": {
     "access": "public"
