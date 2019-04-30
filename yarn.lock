@@ -402,10 +402,17 @@
   resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
   integrity sha512-yALhelO3i0hqZwhjtcr6dYyaLoCHbAMshwtj6cGxTvHZAKXHsYGdff6E8EPw3xLKY0ELUTQ69Q1rQiJENnccMA==
 
-"@types/jest@24.0.11", "@types/jest@^24.0.11":
+"@types/jest@24.0.11":
   version "24.0.11"
   resolved "https://registry.npmjs.org/@types/jest/-/jest-24.0.11.tgz#1f099bea332c228ea6505a88159bfa86a5858340"
   integrity sha512-2kLuPC5FDnWIDvaJBzsGTBQaBbnDweznicvK7UGYzlIJP4RJR2a4A/ByLUXEyEgag6jz8eHdlWExGDtH3EYUXQ==
+  dependencies:
+    "@types/jest-diff" "*"
+
+"@types/jest@^24.0.12":
+  version "24.0.12"
+  resolved "https://registry.npmjs.org/@types/jest/-/jest-24.0.12.tgz#0553dd0a5ac744e7dc4e8700da6d3baedbde3e8f"
+  integrity sha512-60sjqMhat7i7XntZckcSGV8iREJyXXI6yFHZkSZvCPUeOnEJ/VP1rU/WpEWQ56mvoh8NhC+sfKAuJRTyGtCOow==
   dependencies:
     "@types/jest-diff" "*"
 
@@ -433,6 +440,11 @@
   version "11.13.4"
   resolved "https://registry.npmjs.org/@types/node/-/node-11.13.4.tgz#f83ec3c3e05b174b7241fadeb6688267fe5b22ca"
   integrity sha512-+rabAZZ3Yn7tF/XPGHupKIL5EcAbrLxnTr/hgQICxbeuAfWtT0UZSfULE+ndusckBItcv4o6ZeOJplQikVcLvQ==
+
+"@types/node@^11.13.8":
+  version "11.13.8"
+  resolved "https://registry.npmjs.org/@types/node/-/node-11.13.8.tgz#e5d71173c95533be9842b2c798978f095f912aab"
+  integrity sha512-szA3x/3miL90ZJxUCzx9haNbK5/zmPieGraZEe4WI+3srN0eGLiT22NXeMHmyhNEopn+IrxqMc7wdVwvPl8meg==
 
 "@types/relateurl@*":
   version "0.2.28"
@@ -4733,10 +4745,10 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib-cli@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.npmjs.org/tslib-cli/-/tslib-cli-2.0.10.tgz#48ce2e6c0219424f3638b9ce8db006ce1201167a"
-  integrity sha512-LNcvmnJLOgT7XAykBwO1j1c6X87QhTNfsji4MHgWgwvt6RKNB5PB6tCPL9T4zWIRPKIwZPObr4PLbc3NUEqjBg==
+tslib-cli@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.npmjs.org/tslib-cli/-/tslib-cli-2.0.11.tgz#e1cafa24589cda2487dd6807e6f5db398472bba6"
+  integrity sha512-mAIb2alugbmPV1XO4sJYWAt5k6yBGF2gK4P3ekey08hVHhcruXA2cJEcwMTTKxSG6MMLg7Yx7kIJ1OpbWpuehw==
   dependencies:
     "@types/jest" "24.0.11"
     "@types/node" "11.13.4"
@@ -4764,8 +4776,8 @@ tslib-cli@^2.0.10:
     tslint-config-prettier "1.18.0"
     typedoc "0.14.2"
     typedoc-plugin-external-module-name "2.0.0"
-    typedoc-plugin-internal-external "2.0.1"
-    typedoc-plugin-markdown "1.1.27"
+    typedoc-plugin-internal-external "2.0.2"
+    typedoc-plugin-markdown "1.2.0"
     typedoc-plugin-no-inherit "1.1.6"
     typescript "3.4.3"
 
@@ -4894,15 +4906,15 @@ typedoc-plugin-external-module-name@2.0.0:
   resolved "https://registry.yarnpkg.com/typedoc-plugin-external-module-name/-/typedoc-plugin-external-module-name-2.0.0.tgz#c044da973585cd0d5540f94637265592fc0caae7"
   integrity sha512-BJONvKQWolyNqnzjKQIJflsuvyjapsCPR07maHiRvUOXIbhY56SqmYs+VKevq7SIFXsnlfTEE7meP+6Y/Q2Pyw==
 
-typedoc-plugin-internal-external@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-internal-external/-/typedoc-plugin-internal-external-2.0.1.tgz#aedd3e3860c69a8188cc4db141b2385cfed3d4c1"
-  integrity sha512-SFccvQZ4NC9xHiuFHRtALGA43EAYUv373Zmo8KeaSrM1dBaYFidCzXEFACAgPjazBzXEH7fljtdsLmC2yvNxDw==
+typedoc-plugin-internal-external@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/typedoc-plugin-internal-external/-/typedoc-plugin-internal-external-2.0.2.tgz#6ced269be25e1b23559443c2ce6a5483860d53c3"
+  integrity sha512-ZWDJvHT2TGIKSkOkyKc7fiSbz/mBHjXzppyzuQlEEAFJmi9YElEVRC34v0xJz4qGUtVT5nNw7gbD1umKowG4wQ==
 
-typedoc-plugin-markdown@1.1.27:
-  version "1.1.27"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-1.1.27.tgz#a74f01d9ec7d625204b6817278bc22b878093b59"
-  integrity sha512-i/ATsUETDxLAN/i4l525tLfEvjBRdPN2UEuZPEZ1CnkLIQFM1xjcIf3dFnAcIvj/qhrhrMQXfgjphqPATfTEtA==
+typedoc-plugin-markdown@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/typedoc-plugin-markdown/-/typedoc-plugin-markdown-1.2.0.tgz#8bc551656be42d2dfa7879675dfa29470c170190"
+  integrity sha512-M3M9bx8q5u9VppIQ4ATjYV233ZyhRNbxkgTsjy7WVo4UY38dj1JWg90335ZCYktqkNkobSzE2OhVkmbQFGvi2g==
   dependencies:
     turndown "^5.0.3"
 
