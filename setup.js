@@ -51,6 +51,8 @@ files.forEach(file => fs.unlinkSync(fromRoot(file)))
 const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"', 'yarn']
 if (!fs.existsSync(path.join('..', '..', '.git'))) {
   commands.unshift('git init')
+  const deleteFiles = ['.gitignore', '.prettierrc']
+  deleteFiles.forEach(file => fs.unlinkSync(fromRoot(file)))
 }
 commands.forEach(command => {
   console.log(`----- Executing Command -----> ${command}`)
