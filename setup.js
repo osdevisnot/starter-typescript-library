@@ -48,9 +48,11 @@ files.forEach(file => fs.unlinkSync(fromRoot(file)))
 /**
  * Add latest devDependencies and initialize git repo
  */
-const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"', 'yarn']
+const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"']
 if (!fs.existsSync(path.join('..', '..', '.git'))) {
   commands.unshift('git init')
+  commands.push('yarn')
+} else {
   const deleteFiles = ['.gitignore', '.prettierrc']
   deleteFiles.forEach(file => fs.unlinkSync(fromRoot(file)))
 }
