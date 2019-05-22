@@ -48,11 +48,11 @@ files.forEach(file => fs.unlinkSync(fromRoot(file)))
 /**
  * Add latest devDependencies and initialize git repo
  */
-const commands = ['git add .', 'git commit -am "first commit from starter-typescript-library"']
+let commands = []
 if (!fs.existsSync(path.join('..', '..', '.git'))) {
-  commands.unshift('git init')
-  commands.push('yarn')
+  commands = ['git init', 'git add .', 'git commit -am "first commit from starter-typescript-library"', 'yarn']
 } else {
+  console.log('Detected Monorepo Setup. Skipping install commands...')
   const deleteFiles = ['.gitignore', '.prettierrc']
   deleteFiles.forEach(file => fs.unlinkSync(fromRoot(file)))
 }
