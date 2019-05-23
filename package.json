@@ -22,7 +22,7 @@
     "@osdevisnot/prettier-config": "^0.0.2",
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.2",
-    "tslib-cli": "^2.0.13"
+    "tslib-cli": "^2.0.14"
   },
   "publishConfig": {
     "access": "public"

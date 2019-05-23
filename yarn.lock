@@ -309,6 +309,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
+"@osdevisnot/prettier-config@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@osdevisnot/prettier-config/-/prettier-config-0.0.2.tgz#f8b68926fff9be15f56964d2ff16353af0f5f7dd"
+  integrity sha512-i0qyzMBLrydIprWUcL9DwBk2TPF8jRacsgJ3N5D31N9R1uiHNGE0WLt1QHIspW72bzmlHKQwNbNMNalJBNB8ng==
+
 "@types/babel__core@^7.1.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.0.tgz#710f2487dda4dcfd010ca6abb2b4dc7394365c51"
@@ -4698,10 +4703,10 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib-cli@^2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/tslib-cli/-/tslib-cli-2.0.13.tgz#a95cca06b7ecc50f99a01666b0a4168639d673c1"
-  integrity sha512-Gp3epyI2FElkniYAMagyXIhmqTcrzD9rySkiUXn74jEfDicxzCqiWkZJ0cUM4IdZKSwRAovg0rt/oBUdbxdi8w==
+tslib-cli@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/tslib-cli/-/tslib-cli-2.0.14.tgz#1961530bf6343b13b21df3dfd9e05d2cf476be4c"
+  integrity sha512-QA07NMZRzFpCczL51FamuiD41x0LIk6SQMk50vI5oDMXKPACM7bOBZhIuN3EOqitnOwFA6rDK6rRAv/mKkbObQ==
   dependencies:
     "@types/jest" "24.0.13"
     "@types/node" "12.0.2"
