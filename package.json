@@ -19,9 +19,9 @@
   "prettier": "@osdevisnot/prettier-config",
   "dependencies": {},
   "devDependencies": {
-    "@osdevisnot/prettier-config": "^0.0.2",
+    "@osdevisnot/prettier-config": "^0.0.3",
     "@types/jest": "^24.0.15",
-    "@types/node": "^12.0.8",
+    "@types/node": "^12.0.10",
     "tslib-cli": "^2.0.17"
   },
   "publishConfig": {
