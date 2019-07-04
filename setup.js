@@ -12,7 +12,7 @@ const sync = require('child_process').execSync
 const cwd = path.join(__dirname)
 const name = cwd.split(path.sep).pop()
 
-const fromRoot = file => path.join(cwd, file)
+const fromRoot = (file) => path.join(cwd, file)
 
 /**
  * Write a README.md file
@@ -26,15 +26,15 @@ const rewriteFiles = [
   'package.json',
   'test/starter-typescript-library.test.tsx',
   'public/index.html',
-  'rollup.config.js'
+  'rollup.config.js',
 ]
-rewriteFiles.forEach(file => {
+rewriteFiles.forEach((file) => {
   const content = fs.readFileSync(fromRoot(file), 'utf-8')
   fs.writeFileSync(fromRoot(file), content.replace(/starter-typescript-library/g, name), 'utf-8')
 })
 
 const renameFiles = ['src/starter-typescript-library.tsx', 'test/starter-typescript-library.test.tsx']
-renameFiles.forEach(file => {
+renameFiles.forEach((file) => {
   const newName = file.replace(/starter-typescript-library/g, name)
   fs.renameSync(fromRoot(file), fromRoot(newName))
 })
@@ -43,7 +43,7 @@ renameFiles.forEach(file => {
  * Remove Files and Self destruct...
  */
 const files = ['.travis.yml', 'setup.js']
-files.forEach(file => fs.unlinkSync(fromRoot(file)))
+files.forEach((file) => fs.unlinkSync(fromRoot(file)))
 
 /**
  * Add latest devDependencies and initialize git repo
@@ -54,9 +54,9 @@ if (!fs.existsSync(path.join('..', '..', '.git'))) {
 } else {
   console.log('Detected Monorepo Setup. Skipping install commands...')
   const deleteFiles = ['.gitignore', '.prettierrc']
-  deleteFiles.forEach(file => fs.unlinkSync(fromRoot(file)))
+  deleteFiles.forEach((file) => fs.unlinkSync(fromRoot(file)))
 }
-commands.forEach(command => {
+commands.forEach((command) => {
   console.log(`----- Executing Command -----> ${command}`)
   sync(command, { stdio: [0, 1, 2] })
 })

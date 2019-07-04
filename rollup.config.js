@@ -6,14 +6,14 @@ let config = [
     input: 'src/starter-typescript-library.tsx',
     output: { file: 'dist/starter-typescript-library.mjs', format: 'es' },
     tsconfigOverride: { exclude: ['node_modules', 'dist', 'public', 'test'] },
-    minify: true
+    minify: true,
   },
   {
     input: 'src/starter-typescript-library.tsx',
     output: { file: 'dist/starter-typescript-library.js', format: 'umd', name: 'starter-typescript-library' },
     tsconfigOverride: { exclude: ['node_modules', 'dist', 'public', 'test'] },
-    minify: true
-  }
+    minify: true,
+  },
 ]
 
 // demo code on `npm start`

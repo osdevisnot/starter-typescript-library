@@ -325,10 +325,12 @@
     "@nodelib/fs.scandir" "2.1.1"
     fastq "^1.6.0"
 
-"@osdevisnot/prettier-config@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@osdevisnot/prettier-config/-/prettier-config-0.0.3.tgz#f73d2ee547873d20c9b7e01a6b224405074929a1"
-  integrity sha512-kVI8Ad7TQxUuaJ17k6pYKjjXgqB8kvs45JrYcGijQSLlAh8sDfnO54w2u9Lcat7ZyMWfbNj5koZPQ/yXz2nQdA==
+"@osdevisnot/prettier-config@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@osdevisnot/prettier-config/-/prettier-config-0.0.4.tgz#ebdc9809ef52baab615cb27364eefa0ede95a6dd"
+  integrity sha512-V6G/yAuM3NkpwEdkizEc6zDKxYsMxbYE7NwcFecgxXhI6eFQ4/ywpKIt7+3pO+Z/oZs0eMyXjlt3LZsJig43Sg==
+  dependencies:
+    prettier latest
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
@@ -362,13 +364,6 @@
   integrity sha512-CeBpmX1J8kWLcDEnI3Cl2Eo6RfbGvzUctA+CjZUhOKDFbLfcr7fc4usEqLNWetrlJd7RhAkyYe2czXop4fICpw==
   dependencies:
     "@babel/types" "^7.3.0"
-
-"@types/clean-css@*":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@types/clean-css/-/clean-css-4.2.1.tgz#cb0134241ec5e6ede1b5344bc829668fd9871a8d"
-  integrity sha512-A1HQhQ0hkvqqByJMgg+Wiv9p9XdoYEzuwm11SVo1mX2/4PSdhjcrUlilJQoqLscIheC51t1D5g+EFWCXZ2VTQQ==
-  dependencies:
-    "@types/node" "*"
 
 "@types/estree@0.0.39":
   version "0.0.39"
@@ -407,15 +402,6 @@
   version "9.12.3"
   resolved "https://registry.yarnpkg.com/@types/highlight.js/-/highlight.js-9.12.3.tgz#b672cfaac25cbbc634a0fd92c515f66faa18dbca"
   integrity sha512-pGF/zvYOACZ/gLGWdQH8zSwteQS1epp68yRcVLJMgUck/MjEn/FBYmPub9pXT8C1e4a8YZfHo1CKyV8q1vKUnQ==
-
-"@types/html-minifier@^3.5.2":
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/@types/html-minifier/-/html-minifier-3.5.3.tgz#5276845138db2cebc54c789e0aaf87621a21e84f"
-  integrity sha512-j1P/4PcWVVCPEy5lofcHnQ6BtXz9tHGiFPWzqm7TtGuWZEfCHEP446HlkSNc9fQgNJaJZ6ewPtp2aaFla/Uerg==
-  dependencies:
-    "@types/clean-css" "*"
-    "@types/relateurl" "*"
-    "@types/uglify-js" "*"
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
@@ -464,15 +450,15 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@*", "@types/node@12.0.10", "@types/node@^12.0.10":
+"@types/node@*", "@types/node@^12.0.10":
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.10.tgz#51babf9c7deadd5343620055fc8aff7995c8b031"
   integrity sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
 
-"@types/relateurl@*":
-  version "0.2.28"
-  resolved "https://registry.yarnpkg.com/@types/relateurl/-/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
-  integrity sha1-a9p9uGU/piZD9e5p6facEaOS46Y=
+"@types/node@12.0.12", "@types/node@^12.0.12":
+  version "12.0.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.12.tgz#cc791b402360db1eaf7176479072f91ee6c6c7ca"
+  integrity sha512-Uy0PN4R5vgBUXFoJrKryf5aTk3kJ8Rv3PdlHjl6UaX+Cqp1QE0yPQ68MPXGrZOfG7gZVNDIJZYyot0B9ubXUrQ==
 
 "@types/resolve@0.0.8":
   version "0.0.8"
@@ -493,13 +479,6 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
-
-"@types/uglify-js@*":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.0.4.tgz#96beae23df6f561862a830b4288a49e86baac082"
-  integrity sha512-SudIN9TRJ+v8g5pTG8RRCqfqTMNqgWCKKd3vtynhGzkIIjxaicNAMuY5TRadJ6tzDu3Dotf3ngaMILtmOdmWEQ==
-  dependencies:
-    source-map "^0.6.1"
 
 "@types/yargs@^12.0.2", "@types/yargs@^12.0.9":
   version "12.0.12"
@@ -983,7 +962,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-clean-css@4.2.x, clean-css@^4.2.1:
+clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
   integrity sha512-4ZxI6dy4lrY6FHzfiy1aEOXgu4LIsW2MhwG0VBKdcoGoH/XLFgaHSdLTGr4O8Be6A8r3MOphEiI8Gc1n0ecf3g==
@@ -1903,7 +1882,7 @@ html-encoding-sniffer@^1.0.2:
   dependencies:
     whatwg-encoding "^1.0.1"
 
-html-minifier@^3.0.2, html-minifier@^3.5.21:
+html-minifier@^3.0.2:
   version "3.5.21"
   resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.21.tgz#d0040e054730e354db008463593194015212d20c"
   integrity sha512-LKUKwuJDhxNa3uf/LPR/KVjm/l3rBqtYeCOAekvG8F1vItxMUpueGd94i/asDDr8/1u7InxzFA5EeGjhhG5mMA==
@@ -2876,7 +2855,7 @@ lower-case@^1.1.1:
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
 
-magic-string@^0.25.0, magic-string@^0.25.2:
+magic-string@^0.25.2:
   version "0.25.2"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.2.tgz#139c3a729515ec55e96e69e82a11fe890a293ad9"
   integrity sha512-iLs9mPjh9IuTtRsqqhNGYcZXGei0Nh/A4xirrsqW7c+QhKVFL2vm7U09ru6cHRD22azaP/wMDgI+HCqbETMTtg==
@@ -3013,17 +2992,6 @@ mimic-response@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
   integrity sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
-
-minify-html-literals@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/minify-html-literals/-/minify-html-literals-1.2.2.tgz#9595f2f3e8a810fa527ac7125c963b7410ee4b63"
-  integrity sha512-4v5vuLYqhtrapuL6FWGUYncIOEfx7zUvLE7GKc0mdZm97mZsA4kvS+1AE8dhHIc+NJh6vidVOfZRZa1lCJV5CQ==
-  dependencies:
-    "@types/html-minifier" "^3.5.2"
-    clean-css "^4.2.1"
-    html-minifier "^3.5.21"
-    magic-string "^0.25.0"
-    parse-literals "^1.1.1"
 
 minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.4:
   version "3.0.4"
@@ -3445,13 +3413,6 @@ parse-json@^4.0.0:
     error-ex "^1.3.1"
     json-parse-better-errors "^1.0.1"
 
-parse-literals@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/parse-literals/-/parse-literals-1.1.1.tgz#a0a212a434057f615f9299334e8976353280fd75"
-  integrity sha512-WMW0DD2kZozD/owt0XZxs29x/T3zNdnGxYJq8i1NwqAszmKHo6J3qlWk5alKAmm1sEUE89yRyt5KlWdRgrLO9g==
-  dependencies:
-    typescript "^2.9.2"
-
 parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
@@ -3579,6 +3540,11 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+
+prettier@latest:
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
+  integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
 
 pretty-format@^24.8.0:
   version "24.8.0"
@@ -3929,14 +3895,6 @@ rollup-plugin-livereload@1.0.1:
   dependencies:
     livereload "^0.8.0"
 
-rollup-plugin-minify-html-literals@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-minify-html-literals/-/rollup-plugin-minify-html-literals-1.2.2.tgz#ec9a11cbbd6f5d64e6b7af293721faf7439f25e3"
-  integrity sha512-i1cTf+oSpWgAodSgBQXznP44RH8oIBVkRlvbvVg5ByHI+1Y91syAfg8qSa9uA7FiktdLKDWLVWoYIFYlXC8OUw==
-  dependencies:
-    minify-html-literals "^1.2.2"
-    rollup-pluginutils "^2.3.0"
-
 rollup-plugin-multi-entry@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-multi-entry/-/rollup-plugin-multi-entry-2.1.0.tgz#64a7287adfd437cab33bf6364a8d8ab1e7a7725d"
@@ -4008,17 +3966,17 @@ rollup-pluginutils@^1.5.0:
     estree-walker "^0.2.1"
     minimatch "^3.0.2"
 
-rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.5.0, rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.8.1:
+rollup-pluginutils@^2.5.0, rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.8.1.tgz#8fa6dd0697344938ef26c2c09d2488ce9e33ce97"
   integrity sha512-J5oAoysWar6GuZo0s+3bZ6sVZAC0pfqKz68De7ZgDi5z63jOVZn1uJL/+z1jeKHNbGII8kAyHF5q8LnxSX5lQg==
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@1.16.4:
-  version "1.16.4"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.16.4.tgz#0a13bace39cf6c1784781e383e605d1b6274c2f4"
-  integrity sha512-Bht8QXoo2dJc8lUGyEMfnfKCV7hkf1oLzN6L8YdDE2toaaoCe5DxoqYjTyKswWQyiZseViZw9quEdDRz0YXifw==
+rollup@1.16.6:
+  version "1.16.6"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.16.6.tgz#0d979e3edd14a27e5436a145c7f1fcef35e0083b"
+  integrity sha512-oM3iKkzPCq9Da95wCnNfS8YlNZjgCD5c/TceKnJIthI9FOeJqnO3PUr/C5Suv9Kjzh0iphKL02PLeja3A5AMIA==
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "^12.0.10"
@@ -4561,25 +4519,24 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib-cli@^2.0.18:
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/tslib-cli/-/tslib-cli-2.0.18.tgz#22a2b4b9548b3959b3ccf1f2563f6a79ad50e285"
-  integrity sha512-E9eYbW1IPwmN8zX20cTRkPbH3sHJ3JfIvjJdJeLVBpA7lI10+LqhK5IbMmZi3yDit3DmwLaQY53xDoZ5nDuZeQ==
+tslib-cli@^2.0.19:
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/tslib-cli/-/tslib-cli-2.0.19.tgz#a578e8d03620c4d7e0228a5e00ab5d7bd5d5b163"
+  integrity sha512-SS5lwBmHEe8HDHS407Jc3DIfudQkyQyW3XT7t5lJ+xzXO60KWpSsQ1zroKjxOkt5pyIiv1VxYWnQ8ZPrNphsAQ==
   dependencies:
     "@types/jest" "24.0.15"
-    "@types/node" "12.0.10"
+    "@types/node" "12.0.12"
     del "5.0.0"
     getopts "2.2.5"
     gittar "0.1.1"
     jest "24.8.0"
-    rollup "1.16.4"
+    rollup "1.16.6"
     rollup-load-plugins "0.4.0"
     rollup-plugin-commonjs "10.0.1"
     rollup-plugin-filesize "6.1.1"
     rollup-plugin-html "0.2.1"
     rollup-plugin-json "4.0.0"
     rollup-plugin-livereload "1.0.1"
-    rollup-plugin-minify-html-literals "1.2.2"
     rollup-plugin-multi-entry "2.1.0"
     rollup-plugin-node-resolve "5.2.0"
     rollup-plugin-replace "2.2.0"
@@ -4772,11 +4729,6 @@ typescript@3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
   integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
-
-typescript@^2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
-  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
 
 uglify-js@3.4.x:
   version "3.4.10"

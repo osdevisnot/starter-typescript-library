@@ -1,5 +1,5 @@
 {
-  "name": "starter-typescript-library",
+  "name": "@starter-typescript-library/starter-typescript-library",
   "version": "0.1.0",
   "license": "MIT",
   "files": [
@@ -19,10 +19,10 @@
   "prettier": "@osdevisnot/prettier-config",
   "dependencies": {},
   "devDependencies": {
-    "@osdevisnot/prettier-config": "^0.0.3",
+    "@osdevisnot/prettier-config": "^0.0.4",
     "@types/jest": "^24.0.15",
-    "@types/node": "^12.0.10",
-    "tslib-cli": "^2.0.18"
+    "@types/node": "^12.0.12",
+    "tslib-cli": "^2.0.19"
   },
   "publishConfig": {
     "access": "public"

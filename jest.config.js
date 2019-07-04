@@ -5,9 +5,9 @@ module.exports = {
   coverageDirectory: 'coverage', // The directory where Jest should output its coverage files
   coveragePathIgnorePatterns: ['/node_modules/', '/test/'], // An array of regexp pattern strings used to skip coverage collection
   coverageReporters: ['text', 'lcov'], // A list of reporter names that Jest uses when writing coverage reports
-  testEnvironment: 'node', // The test environment that will be used for testing
+  testEnvironment: 'dom', // The test environment that will be used for testing
   testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'], // The glob patterns Jest uses to detect test files
   transform: { '.(ts|tsx|js|jsx)': 'ts-jest' }, // A map from regular expressions to paths to transformers
   transformIgnorePatterns: ['node_modules/(?!(compile_this_package_from_node_modules)/)'],
-  coverageThreshold: { global: { branches: 65, functions: 80, lines: 85, statements: 80 } }
+  coverageThreshold: { global: { branches: 65, functions: 80, lines: 85, statements: 80 } },
 }
