@@ -4519,10 +4519,10 @@ ts-jest@24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib-cli@^2.0.19:
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/tslib-cli/-/tslib-cli-2.0.19.tgz#a578e8d03620c4d7e0228a5e00ab5d7bd5d5b163"
-  integrity sha512-SS5lwBmHEe8HDHS407Jc3DIfudQkyQyW3XT7t5lJ+xzXO60KWpSsQ1zroKjxOkt5pyIiv1VxYWnQ8ZPrNphsAQ==
+tslib-cli@^2.0.20:
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/tslib-cli/-/tslib-cli-2.0.20.tgz#f5bed166de66f634ff6b6a713d3d13a504c46fcc"
+  integrity sha512-xalhglLAu3wZqwJUFrLhfD+27hZ9Ynxj9RciPlKO6PGdNOt8fbhGcefhIbrXM5YSDCRoR7G57/o/Qhm826aPBA==
   dependencies:
     "@types/jest" "24.0.15"
     "@types/node" "12.0.12"
