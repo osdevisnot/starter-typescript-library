@@ -50,7 +50,7 @@ files.forEach((file) => fs.unlinkSync(fromRoot(file)))
  */
 let commands = []
 if (!fs.existsSync(path.join('..', '..', '.git'))) {
-  commands = ['yarn upgrade --latest', 'git init', 'git add .', 'git commit -am "first commit from tslib-cli"']
+  commands = ['yarn', 'yarn upgrade --latest', 'git init', 'git add .', 'git commit -am "first commit from tslib-cli"']
 } else {
   console.log('Detected Monorepo Setup. Skipping install commands...')
   const deleteFiles = ['.gitignore', '.prettierrc']
